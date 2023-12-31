@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reproductor m3u8</title>
+    <!-- Enlaza los archivos CSS y JavaScript de MediaElement.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelementplayer.min.css">
+</head>
+<body>
+    <video id="myVideo" controls width="640" height="360">
+        <source src="http://45.191.196.40:20000/speedmaxmusic.m3u8" type="application/x-mpegURL">
+        Tu navegador no soporta la reproducción de este video.
+    </video>
+
+    <!-- Enlaza los archivos JavaScript de MediaElement.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelement-and-player.min.js"></script>
+    <script>
+        // Inicializa MediaElement.js en el elemento <video>
+        var player = new MediaElementPlayer('myVideo');
+    </script>
+</body>
+</html>
